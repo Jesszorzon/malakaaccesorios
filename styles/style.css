@@ -1,11 +1,11 @@
-/* RESET BÁSICO */
+/* RESET GENERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* FUENTE GENERAL */
+/* FUENTE */
 body {
   font-family: 'Lato', sans-serif;
   background-color: #fff9f9;
@@ -14,65 +14,39 @@ body {
 
 /* LOGO */
 .malaka-logo {
-  width: 150px;
+  width: 120px;
   height: auto;
 }
 
 /* NAVBAR */
-/* NAV con Grid */
-.malaka-grid-nav {
-  display: grid;
-  grid-template-areas: "logo nav";
-  grid-template-columns: 1fr 3fr;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem 2rem;
-  background-color: #d72638; /* rojo principal */
-  color: white;
-}
-
-/* Áreas del grid */
-.logo {
-  grid-area: logo;
-}
-
-.nav-menu {
-  grid-area: nav;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu li a {
-  text-decoration: none;
-  color: white;
+.navbar-nav .nav-link {
   font-weight: bold;
-  transition: color 0.3s
+  color: white !important;
 }
 
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+}
 
-.titulo {
+/* TITULOS ROJOS */
+.titulo-rojo {
   color: #d72638;
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
-
-/* SECCIÓN DE CARDS */
-.card-container {
-  margin-top: 2rem;
+/* MAIN */
+.container {
+  max-width: 1200px;
 }
 
+/* CARDS */
 .card {
-  padding: 1rem;
   background-color: #fff;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .card:hover {
@@ -80,20 +54,24 @@ body {
 }
 
 .card h4 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
   color: #d72638;
-}
-
-.card p {
-  font-size: 0.95rem;
-}
-
-.card h5 {
-  font-weight: bold;
+  font-size: 1.2rem;
   margin: 0.5rem 0;
 }
 
+.card p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.card .btn {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+/* PRODUCTO IMG */
 .producto-img {
   width: 100%;
   height: auto;
@@ -101,72 +79,40 @@ body {
   margin-bottom: 1rem;
 }
 
-/* BOTÓN DETALLES */
-.btn {
-  background-color: #d72638;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #d72638;
-  color: white;
-}
-
-/* INSTAGRAM */
-main h2 {
-  margin-top: 3rem;
-  font-size: 1.8rem;
-  color: #d72638;
-  text-align: center;
-}
-
-main a[href^="https://www.instagram"] {
+/* INSTAGRAM LINK */
+.instagram-link a {
   display: block;
   text-align: center;
-  margin-top: 1rem;
   font-weight: bold;
   color: #d72638;
+  margin-top: 1rem;
   text-decoration: none;
 }
 
-main a[href^="https://www.instagram"]:hover {
+.instagram-link a:hover {
   text-decoration: underline;
 }
 
 /* FOOTER */
-.malaka-footer {
-  background-color: #d72638; /* equivalente a bg-light */
+footer {
+  background-color: #d72638;
+  color: white;
   text-align: center;
   padding: 1rem 0;
-}
-
-.malaka-footer p {
-  margin: 0;
   font-size: 0.9rem;
-  color: white;
 }
 
-
-/* RESPONSIVE PADDING */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .Malaka_nav {
-    flex-direction: column;
-    align-items: start;
+  .malaka-logo {
+    width: 100px;
   }
 
-  .Malaka_nav ul {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
+  .card {
+    padding: 1rem;
   }
 
-  .card-container {
-    padding: 0 1rem;
+  .navbar-nav {
+    gap: 0.5rem;
   }
 }

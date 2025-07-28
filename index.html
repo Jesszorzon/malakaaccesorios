@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,108 +11,102 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- CSS propio -->
+  <!-- Estilos propios -->
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
-  <!-- HEADER -->
+  <!-- NAVBAR Bootstrap -->
   <header>
-    <nav class="malaka-grid-nav">
-      <div class="logo">
-        <img class="malaka-logo" src="./IMG/logo.png" alt="Logo Malaka" />
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger px-4">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" alt="Malaka Accesorios" class="malaka-logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#malakaNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="malakaNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/sobrenosotras.html">Sobre nosotras</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+        </ul>
       </div>
-      <ul class="nav-menu">
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./pages/Sobrenosotras.html">Sobre Nosotras</a></li>
-        <li><a href="./pages/Productos.html">Productos</a></li>
-        <li><a href="./pages/Contacto.html">Contacto</a></li>
-        <li><a href="./pages/PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
-      </ul>
     </nav>
   </header>
 
   <!-- MAIN -->
   <main class="container my-5">
-    <section class="card-container row g-4">
-      <!-- Producto -->
-      <div class="card col-md-3">
-        <h4>PAQUITA</h4>
-        <img src="./IMG/PAQUITA.jpg" alt="Paquita" class="producto-img" />
-        <p>Paquita Grande</p>
-        <h5>$200.000</h5>
-        <a href="#" class="btn btn-primary">Ver Detalles</a>
+
+    <!-- Sección destacada -->
+    <section class="text-center mb-5">
+      <h1 class="titulo-rojo">Bienvenidas a Malaka</h1>
+      <p>Elegí estilo y originalidad con nuestros accesorios seleccionados.</p>
+    </section>
+
+    <!-- Productos destacados -->
+    <section class="row text-center mb-5">
+      <h2 class="titulo-rojo mb-4">Productos destacados</h2>
+
+      <div class="col-md-4">
+        <div class="card p-3">
+          <img src="./img/paquita.jpg" class="producto-img" alt="Paquita" />
+          <h4>PAQUITA</h4>
+          <p>$200.000</p>
+          <a href="#" class="btn btn-danger">Ver más</a>
+        </div>
       </div>
 
-      <div class="card col-md-3">
-        <h4>CONCEPCION</h4>
-        <img src="./IMG/CONCEPCION.jpeg" alt="Concepción" class="producto-img" />
-        <p>CONCEPCION</p>
-        <h5>$200.000</h5>
-        <a href="#" class="btn btn-primary">Ver Detalles</a>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <img src="./img/ursula.jpeg" class="producto-img" alt="Úrsula" />
+          <h4>ÚRSULA</h4>
+          <p>$180.000</p>
+          <a href="#" class="btn btn-danger">Ver más</a>
+        </div>
       </div>
 
-      <div class="card col-md-3">
-        <h4>FLORA</h4>
-        <img src="./IMG/FLORA.jpeg" alt="Flora" class="producto-img" />
-        <p>FLORA</p>
-        <h5>$200.000</h5>
-        <a href="#" class="btn btn-primary">Ver Detalles</a>
-      </div>
-
-      <div class="card col-md-3">
-        <h4>JACINTA</h4>
-        <img src="./IMG/JACINTA.jpeg" alt="Jacinta" class="producto-img" />
-        <p>JACINTA</p>
-        <h5>$200.000</h5>
-        <a href="#" class="btn btn-primary">Ver Detalles</a>
-      </div>
-
-      <div class="card col-md-3">
-        <h4>MATILDE</h4>
-        <img src="./IMG/MATILDE.jpg" alt="Matilde" class="producto-img" />
-        <p>MATILDE</p>
-        <h5>$200.000</h5>
-        <a href="#" class="btn btn-primary">Ver Detalles</a>
-      </div>
-
-      <div class="card col-md-3">
-        <h4>RAFAELA</h4>
-        <img src="./IMG/RAFAELA.jpg" alt="Rafaela" class="producto-img" />
-        <p>RAFAELA</p>
-        <h5>$200.000</h5>
-        <a href="#" class="btn btn-primary">Ver Detalles</a>
-      </div>
-
-      <div class="card col-md-3">
-        <h4>URSULA</h4>
-        <img src="./IMG/URSULA.jpeg" alt="Úrsula" class="producto-img" />
-        <p>URSULA</p>
-        <h5>$200.000</h5>
-        <a href="#" class="btn btn-primary">Ver Detalles</a>
-      </div>
-
-      <div class="card col-md-3">
-        <h4>VICENTA</h4>
-        <img src="./IMG/VICENTA.jpeg" alt="Vicenta" class="producto-img" />
-        <p>VICENTA</p>
-        <h5>$200.000</h5>
-        <a href="#" class="btn btn-primary">Ver Detalles</a>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <img src="./img/matilde.jpg" class="producto-img" alt="Matilde" />
+          <h4>MATILDE</h4>
+          <p>$220.000</p>
+          <a href="#" class="btn btn-danger">Ver más</a>
+        </div>
       </div>
     </section>
 
-    <h2 class="mt-5">INSTAGRAM</h2>
-    <a href="https://www.instagram.com/malaka_accesorios/" target="_blank">Visitanos en Instagram</a>
+    <!-- Promociones -->
+    <section class="text-center bg-light p-4 mb-5">
+      <h2 class="titulo-rojo">Promociones</h2>
+      <p>Envíos gratis a todo el país en compras mayores a $100.000</p>
+    </section>
+
+    <!-- Novedades -->
+    <section class="text-center mb-5">
+      <h2 class="titulo-rojo">Novedades</h2>
+      <p>¡Muy pronto lanzamos nuestra nueva colección de verano 2025!</p>
+    </section>
+
+    <!-- Instagram -->
+    <section class="text-center">
+      <h2 class="titulo-rojo">Seguinos en Instagram</h2>
+      <a href="https://www.instagram.com/malaka_accesorios/" target="_blank" class="btn btn-outline-danger mt-2">
+        @malaka_accesorios
+      </a>
+    </section>
+
   </main>
 
   <!-- FOOTER -->
- <footer class="malaka-footer">
-  <p>© 2025 Malaka Accesorios — Accesorios con estilo, elegidos por hermanas.</p>
-</footer>
-
+  <footer class="bg-danger text-center text-white py-3">
+    <p class="m-0">© 2025 Malaka Accesorios — Accesorios con estilo, elegidos por hermanas.</p>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
